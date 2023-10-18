@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>I am Karan Mahajan, a passionate web developer skilled in HTML, CSS, JavaScript, SQL, Node.js, and MongoDB. With a strong
+                foundation in front-end and back-end technologies, I create responsive and interactive web applications that
+                provide seamless user experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="project-card">
+                <h2>Personal Portfolio Website</h2>
+                <p>A responsive portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                <button class="nav-button" onclick="scrollToProject('task-management-app')">Next Project</button>
+            </div>
+            <div class="project-card" id="task-management-app">
+                <h2>Task Management App</h2>
+                <p>A web application to manage tasks and to-do lists. Built with HTML, CSS, JavaScript, and localStorage for data storage.</p>
+                <button class="nav-button" onclick="scrollToProject('blog-cms')">Next Project</button>
+            </div>
+            <div class="project-card" id="blog-cms">
+                <h2>Blog CMS</h2>
+                <p>A content management system for creating and managing blogs. Developed using HTML, CSS, JavaScript, Node.js, Express, and MongoDB.</p>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
